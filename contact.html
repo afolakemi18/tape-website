@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | TAPE</title>
+<meta name="description" content="Get in touch with The Advance Pathway Educational Foundation (TAPE). Call, email, or send us a message.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="TAPE — The Advance Pathway Educational Foundation" class="site-logo">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li class="has-dropdown">
+          <a href="#">Get Involved</a>
+          <ul class="sub-menu">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="partner.html">Partner With Us</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a href="donate.html" class="btn btn-primary btn-sm">Donate</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Page hero -->
+<section class="hero" style="--hero-photo:url('/images/outreach-queue.png');">
+  <div class="hero-blob b1" aria-hidden="true"></div>
+  <div class="hero-blob b2" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-stat-pill"><span class="dot">💬</span> Get In Touch</div>
+    <h1>Let's <span>talk.</span></h1>
+  </div>
+</section>
+
+<!-- Contact content -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <div data-reveal>
+        <div class="eyebrow">Get In Touch</div>
+        <h2>We'd love to hear from you</h2>
+        <p class="lead">Questions about our programmes, press enquiries, or just want to say hi? Reach us directly, or send a message and we'll get back to you.</p>
+
+        <div class="contact-cards" data-reveal-group>
+          <a href="tel:+2348178124314" class="contact-card">
+            <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span class="contact-card-label">Call Us</span>
+              <strong class="contact-card-value">+234 817 812 4314</strong>
+            </div>
+          </a>
+          <a href="mailto:info@tape.ng" class="contact-card">
+            <div class="contact-card-icon"><i class="fa-regular fa-envelope"></i></div>
+            <div>
+              <span class="contact-card-label">Write Email</span>
+              <strong class="contact-card-value">info@tape.ng</strong>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="form-card form-card-compact" data-reveal>
+        <h3>Send us a message</h3>
+        <form id="contactForm" action="https://formsubmit.co/info@tape.ng" method="POST">
+          <input type="hidden" name="_subject" value="New message from the TAPE website">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="contactFormName">Name</label>
+              <input type="text" id="contactFormName" name="name" required>
+            </div>
+            <div class="form-field">
+              <label for="contactFormEmail">Email</label>
+              <input type="email" id="contactFormEmail" name="email" required>
+            </div>
+            <div class="form-field full">
+              <label for="contactFormMessage">Message</label>
+              <textarea id="contactFormMessage" name="message" required></textarea>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary" id="contactFormSubmit">Send Message</button>
+            <span class="form-status form-status-error" id="contactFormError" hidden>Something went wrong. Please try again, or email us directly.</span>
+          </div>
+        </form>
+
+        <div class="form-success" id="contactFormSuccess" hidden>
+          <div class="form-success-icon">✓</div>
+          <h3>Message sent!</h3>
+          <p>Thanks for reaching out. We'll get back to you within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/logo-white.png" alt="TAPE — The Advance Pathway Educational Foundation" class="footer-logo-img">
+        </div>
+        <p>The Advance Pathway Educational Foundation (TAPE), formerly known as Recycle2School. A Nigerian NGO working on child education, mentorship and environmental sustainability.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/theadvancepathway/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/the-advance-pathway-educational-foundation/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#programs">Our Programs</a></li>
+          <li><a href="impact.html">Our Impact</a></li>
+          <li><a href="donate.html">Get Involved</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="index.html#programs">Recycle2School</a></li>
+          <li><a href="index.html#programs">Back2School</a></li>
+          <li><a href="index.html#programs">Mentorship &amp; Career Readiness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>✉ <a href="mailto:info@tape.ng">info@tape.ng</a></li>
+          <li>📍 Lagos, Nigeria</li>
+          <li>📞 <a href="tel:+2348178124314">+234 817 812 4314</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> The Advance Pathway Educational Foundation (TAPE). RC: IT-7657994.</div>
+      <div><a href="https://www.instagram.com/theadvancepathway/" target="_blank" rel="noopener">@theadvancepathway</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=7"></script>
+</body>
+</html>

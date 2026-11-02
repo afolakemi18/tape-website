@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Volunteer | TAPE</title>
+<meta name="description" content="Volunteer with The Advance Pathway Educational Foundation (TAPE). Join a Recycle2School collection drive or mentor a student.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="icon" href="favicon-16.png" type="image/png" sizes="16x16">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="TAPE — The Advance Pathway Educational Foundation" class="site-logo">
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#programs">Programs</a></li>
+        <li><a href="impact.html">Impact</a></li>
+        <li class="has-dropdown">
+          <a href="#">Get Involved</a>
+          <ul class="sub-menu">
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="volunteer.html">Volunteer</a></li>
+            <li><a href="partner.html">Partner With Us</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-cta">
+      <a href="donate.html" class="btn btn-primary btn-sm">Donate</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Page hero -->
+<section class="hero" style="--hero-photo:url('/images/event-celebration.png');">
+  <div class="hero-blob b1" aria-hidden="true"></div>
+  <div class="hero-blob b2" aria-hidden="true"></div>
+  <div class="container hero-inner">
+    <div class="hero-stat-pill"><span class="dot">🙌</span> Join Us</div>
+    <h1>Give a few hours, <span>change a term.</span></h1>
+  </div>
+</section>
+
+<!-- Volunteer content -->
+<section class="about">
+  <div class="container" style="display:block; max-width:760px;">
+    <div class="section-head left" data-reveal style="margin-bottom:36px;">
+      <div class="eyebrow">Ways To Volunteer</div>
+      <h2>We're a small team. An extra pair of hands goes a long way.</h2>
+      <p>Pick whichever fits your time and skills, then reach out and we'll take it from there.</p>
+    </div>
+
+    <div class="pillars" data-reveal-group>
+      <div class="pillar-row">
+        <div class="ic">♻</div>
+        <div>
+          <h4>Collection Drives</h4>
+          <p>Help sort and collect recyclable waste at a Recycle2School drive in your area.</p>
+        </div>
+      </div>
+      <div class="pillar-row">
+        <div class="ic">🎓</div>
+        <div>
+          <h4>Mentoring</h4>
+          <p>Spend time with a student, one-on-one or in a small group, as part of our mentorship work.</p>
+        </div>
+      </div>
+      <div class="pillar-row">
+        <div class="ic">🛠️</div>
+        <div>
+          <h4>Skills On Request</h4>
+          <p>Got a skill in design, admin, logistics or photography? Tell us, and we'll find a use for it.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-card" data-reveal>
+      <div class="form-card-head">
+        <div>
+          <h3>Sign up to volunteer</h3>
+          <p>Tell us a bit about yourself and we'll be in touch about next steps.</p>
+        </div>
+        <div class="form-email-note"><i class="fa-regular fa-envelope"></i><span>Prefer to send us an email instead? Write to <a href="mailto:info@tape.ng">info@tape.ng</a></span></div>
+      </div>
+
+      <form id="volunteerForm" action="https://formsubmit.co/info@tape.ng" method="POST">
+        <input type="hidden" name="_subject" value="New volunteer sign-up from the TAPE website">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+        <div class="form-grid">
+          <div class="form-field">
+            <label for="volName">Full name</label>
+            <input type="text" id="volName" name="volName" required>
+          </div>
+          <div class="form-field">
+            <label for="volEmail">Email</label>
+            <input type="email" id="volEmail" name="volEmail" required>
+          </div>
+          <div class="form-field">
+            <label for="volPhone">Mobile number</label>
+            <input type="tel" id="volPhone" name="volPhone" required>
+          </div>
+          <div class="form-field">
+            <label for="volLocation">Where are you located?</label>
+            <input type="text" id="volLocation" name="volLocation" placeholder="e.g. Lagos, Nigeria" required>
+          </div>
+          <div class="form-field">
+            <label for="volAge">Age range</label>
+            <select id="volAge" name="ageRange" required>
+              <option value="" disabled selected>Select one</option>
+              <option value="Under 18">Under 18</option>
+              <option value="18-25">18–25</option>
+              <option value="26-35">26–35</option>
+              <option value="Over 36">Over 36</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="volMode">How would you like to volunteer?</label>
+            <select id="volMode" name="volunteerMode">
+              <option value="" selected>No preference</option>
+              <option value="On Site & In Person">On-site &amp; in person</option>
+              <option value="Hybrid">Hybrid</option>
+              <option value="Remote">Remote</option>
+            </select>
+          </div>
+          <div class="form-field full">
+            <label for="volDept">Which area interests you most? (optional)</label>
+            <select id="volDept" name="volunteerDepartment">
+              <option value="" selected>Not sure yet, surprise me</option>
+              <option value="Environmental and Recycling" data-skills="Good fit if you have: environmental awareness, organisational skills, public outreach.">Environmental &amp; Recycling</option>
+              <option value="Education and Outreach" data-skills="Good fit if you have: communication, teaching or tutoring, curriculum development.">Education &amp; Outreach</option>
+              <option value="Fundraising and Development" data-skills="Good fit if you have: fundraising experience, networking, grant writing.">Fundraising &amp; Development</option>
+              <option value="Community Engagement and Sensitization" data-skills="Good fit if you have: interpersonal skills, community organising, public speaking.">Community Engagement &amp; Sensitisation</option>
+              <option value="Marketing and Communications" data-skills="Good fit if you have: digital marketing, graphic design, content creation, copywriting.">Marketing &amp; Communications</option>
+              <option value="Logistics and Event Planning" data-skills="Good fit if you have: project management, organisation, attention to detail.">Logistics &amp; Event Planning</option>
+              <option value="Research and Data Analysis" data-skills="Good fit if you have: research, data analysis, report writing.">Research &amp; Data Analysis</option>
+              <option value="Volunteer Coordination" data-skills="Good fit if you have: leadership, coordination, people management.">Volunteer Coordination</option>
+            </select>
+            <p class="field-help" id="volDeptHelp"></p>
+          </div>
+          <div class="form-field full">
+            <label for="volMessage">Anything else you'd like us to know? (optional)</label>
+            <textarea id="volMessage" name="volMessage" placeholder="Skills, availability, past volunteering experience..."></textarea>
+          </div>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="volunteerFormSubmit">Sign Up to Volunteer</button>
+          <span class="form-status form-status-error" id="volunteerFormError" hidden>Something went wrong. Please try again, or email us directly.</span>
+        </div>
+      </form>
+
+      <div class="form-success" id="volunteerFormSuccess" hidden>
+        <div class="form-success-icon">✓</div>
+        <h3>Thank you!</h3>
+        <p>We've got your details. We'll get back to you within 24 hours.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <div class="footer-logo">
+          <img src="images/logo-white.png" alt="TAPE — The Advance Pathway Educational Foundation" class="footer-logo-img">
+        </div>
+        <p>The Advance Pathway Educational Foundation (TAPE), formerly known as Recycle2School. A Nigerian NGO working on child education, mentorship and environmental sustainability.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/theadvancepathway/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/the-advance-pathway-educational-foundation/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#programs">Our Programs</a></li>
+          <li><a href="impact.html">Our Impact</a></li>
+          <li><a href="donate.html">Get Involved</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="index.html#programs">Recycle2School</a></li>
+          <li><a href="index.html#programs">Back2School</a></li>
+          <li><a href="index.html#programs">Mentorship &amp; Career Readiness</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul class="footer-contact">
+          <li>✉ <a href="mailto:info@tape.ng">info@tape.ng</a></li>
+          <li>📍 Lagos, Nigeria</li>
+          <li>📞 <a href="tel:+2348178124314">+234 817 812 4314</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div>© <span id="year"></span> The Advance Pathway Educational Foundation (TAPE). RC: IT-7657994.</div>
+      <div><a href="https://www.instagram.com/theadvancepathway/" target="_blank" rel="noopener">@theadvancepathway</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js?v=7"></script>
+</body>
+</html>
