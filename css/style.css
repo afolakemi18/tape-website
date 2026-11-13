@@ -548,6 +548,7 @@ p { color: var(--gray); margin: 0 0 16px; }
     position: static; opacity: 1; visibility: visible; transform: none;
     box-shadow: none; margin: 6px 0 6px 14px; padding: 0;
     display: none;
+    transition: none;
   }
   .main-nav ul li.has-dropdown.open-sub > .sub-menu {
     display: block; opacity: 1; visibility: visible;

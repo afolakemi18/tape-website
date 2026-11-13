@@ -17,6 +17,10 @@ if (navToggle && mainNav) {
       if (isTopLevelDropdownLink && window.innerWidth <= 860) {
         e.preventDefault();
         parentLi.classList.toggle('open-sub');
+        // Force a reflow so WebKit repaints the submenu immediately
+        // instead of leaving it invisible until a nearby repaint.
+        const subMenu = parentLi.querySelector('.sub-menu');
+        if (subMenu) void subMenu.offsetHeight;
         return;
       }
       mainNav.classList.remove('open');
