@@ -521,19 +521,25 @@ p { color: var(--gray); margin: 0 0 16px; }
 
 /* =========================== Dropdown nav =========================== */
 .main-nav ul li.has-dropdown { position: relative; }
-.main-nav .sub-menu {
-  display: block;
-  position: absolute; top: 100%; left: 50%; transform: translate(-50%, 8px) scaleY(0.9);
-  min-width: 220px; background: #fff; border-radius: var(--radius);
-  box-shadow: var(--shadow-lg); padding: 10px; margin-top: 14px;
-  opacity: 0; visibility: hidden; transform-origin: top center;
-  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
-  z-index: 50;
+
+/* Hover-fade dropdown only exists on desktop widths. Scoping it here
+   (instead of relying on the mobile block to out-specify it) avoids
+   its higher-specificity :hover rule hijacking the mobile submenu. */
+@media (min-width: 861px) {
+  .main-nav .sub-menu {
+    display: block;
+    position: absolute; top: 100%; left: 50%; transform: translate(-50%, 8px) scaleY(0.9);
+    min-width: 220px; background: #fff; border-radius: var(--radius);
+    box-shadow: var(--shadow-lg); padding: 10px; margin-top: 14px;
+    opacity: 0; visibility: hidden; transform-origin: top center;
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease;
+    z-index: 50;
+  }
+  .main-nav ul li.has-dropdown:hover > .sub-menu {
+    opacity: 1; visibility: visible; transform: translate(-50%, 0) scaleY(1);
+  }
 }
 .main-nav .sub-menu li { width: 100%; }
-.main-nav ul li.has-dropdown:hover > .sub-menu {
-  opacity: 1; visibility: visible; transform: translate(-50%, 0) scaleY(1);
-}
 .main-nav .sub-menu li a {
   display: block; padding: 10px 14px; border-radius: 8px;
   font-size: 13.5px; text-transform: none; font-weight: 600;
