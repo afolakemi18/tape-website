@@ -546,12 +546,12 @@ p { color: var(--gray); margin: 0 0 16px; }
 @media (max-width: 860px) {
   .main-nav .sub-menu {
     position: static; opacity: 1; visibility: visible; transform: none;
-    box-shadow: none; margin: 6px 0 6px 14px; padding: 0;
-    display: none;
+    box-shadow: none; margin: 0 0 0 14px; padding: 0;
+    display: block; max-height: 0; overflow: hidden;
     transition: none;
   }
   .main-nav ul li.has-dropdown.open-sub > .sub-menu {
-    display: block; opacity: 1; visibility: visible;
+    max-height: 300px; margin: 6px 0 6px 14px;
   }
   .main-nav .sub-menu li a { padding: 8px 0; border-bottom: none; }
 }
